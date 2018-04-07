@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<title>ng-repeat in action</title>
+	</head>
+	<body ng-init="people=[{name:'rimpi', city:'mumbai'},{name:'balraj', city:'amritsar'},{name:'rosey', city:'delhi'}]">
+	<ul>
+		<li ng-repeat="person in people">{{ person.name  + ' ' + person.city}}</li>
+		
+		</ul>
+		<br/>
+		<table>
+			<th>Name</th>
+			<th>City</th>
+		<tr ng-repeat="person in people">
+			<td> {{ person. name }}</td>
+			<td> {{ person.city }}</td>
+			</tr>
+			
+		</table>
+	
+	<script src="angular.js"></script>
+	</body>
+	
+	
+
+</html>
